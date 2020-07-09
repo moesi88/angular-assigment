@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Roboto:wght@700&display=swap');
+
+header {
+  height: 80vh;
+  background-image: url("../../../assets/bg-img.jpg");
+  background-size: cover;
+  background-position: center;
+  @media (max-width:540px){
+    font-size:15px
+ }
+
+}
+header .wrapper{
+  position: fixed;
+  z-index: 3000;
+  width:100%
+}
+
+.overlay {
+  position: absolute;
+  height: 80vh;
+  background: linear-gradient(#025179 0%, #10435f 100%);
+  width: 100%;
+  opacity: 0.8;
+  z-index: 10;
+}
+
+header,
+.header-bar {
+  width: 100%;
+}
+
+.header-bar {
+  height: 50px;
+  padding: 1.2rem 2rem;
+  color: rgb(201, 200, 200);
+  position: relative;
+}
+
+.header-bar a {
+  float: right;
+  border: 1px solid transparent;
+  background-color: rgb(7, 65, 95);
+  padding: 0.5rem 5rem;
+  text-decoration: none;
+  color: rgb(201, 200, 200);
+  position: relative;
+  bottom: 10px;
+}
+
+.header-bar p {
+  float: left;
+  font-family: "Handlee", cursive;
+}
+
+.header-bar::after {
+  content: "";
+  display: block;
+}
+.wrapper {
+  background-color: rgba(0, 97, 158, 1);
+}
+
+/* hero */
+.hero-wrapper {
+  position: absolute;
+  z-index: 20;
+  height: 80vh;
+  line-height: 1.2;
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+
+  .hero-content {
+    width: 70vw;
+    height:70vh;
+    min-width: 250px;
+    margin-top:5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+
+    p:nth-child(1) {
+      font-size: 16px;
+      line-height: 1.75;
+      font-family: 'Roboto', sans-serif;
+  
+    }
+
+    p:nth-child(3) {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+
+      @media (max-width:540px){
+         font-size:15px
+      }
+    
+    }
+
+    p:last-child {
+      font-size: 20px;
+      line-height: 1;
+    
+  
+    }
+
+    h3 {
+      font-size: 36px;
+      line-height: 1.2;
+      color: #ffffff;
+       font-family: 'Dosis', sans-serif;
+  
+    }
+
+    p,h3{
+      width: 100%;
+      max-width: 1000px;
+  
+    }
+  
+  }
+}

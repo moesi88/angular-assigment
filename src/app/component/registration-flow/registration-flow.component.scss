@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300;600&display=swap");
+
+.rf-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #000000ca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 2000;
+}
+
+.rf-form {
+  border: 1px solid transparent;
+  width: 600px;
+  height: auto;
+  padding: 24px 40px;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  position: relative;
+  margin-top: 20rem;
+
+  @media screen and (max-width: 550px) {
+    width: 327px;
+    padding: 16px 25px;
+    margin-top: 4rem;
+  }
+}
+
+.rf-form .container button {
+  padding: 1rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.rf-form button i {
+  margin-left: -0.6rem;
+  color: #000000;
+}
+.rf-form button span {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 0.3rem;
+}
+
+.rf-form .container {
+  display: flex;
+  flex-direction: column;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    height: 45px;
+  }
+  @media screen and (max-width: 550px) {
+    flex-direction: column-reverse;
+
+    button {
+      width: 100% !important;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.buttons .verder {
+  position: relative;
+  width: 330px;
+  background-color: #025179;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+}
+
+.buttons .vorige {
+  width: 150px;
+  background-color: #fff;
+  color: rgb(26, 26, 26);
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.buttons .verder,
+.verder {
+  background-color: var(--headerColor);
+  color: rgb(255, 255, 255);
+  border-color: transparent;
+}
+
+.final-step-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  margin-top: 3rem;
+
+  @media screen and (max-width: 550px) {
+    margin-bottom: 2rem;
+  }
+
+  button {
+    padding: 1rem;
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  button:first-of-type {
+    border: 1px solid lightgray;
+  }
+}
+
+.sluiten-button {
+  position: absolute;
+  width: 100px;
+  right: 0;
+  color: #212529;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+
+  i {
+    margin-left: 0.3rem;
+    font-size: 20px;
+    color: #212529;
+  }
+
+  @media screen and (max-width: 550px) {
+    top: -30px;
+    right: -18px;
+    color: #ffff;
+    i {
+      color: #ffff;
+    }
+  }
+}

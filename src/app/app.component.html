@@ -1,0 +1,20 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div>
+    <app-header></app-header>
+    <app-form></app-form>  
+    <!-- add class closed here -->
+    <div class='second-reg-window closed'> 
+       <app-registration-flow></app-registration-flow>
+    </div>
+    
+    <router-outlet></router-outlet>
+  </div>
+</body>
+
+</html>

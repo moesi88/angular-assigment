@@ -1,0 +1,51 @@
+.top-message {
+}
+.inloggen-button {
+  width: 200px;
+  text-align: center;
+  line-height: 32px;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, .25);
+  color: #fff;
+  font-weight: 700;
+
+  @media screen and (max-width:550px){
+    width: 50%;
+  }
+}
+.message {
+  font-size: .75rem;  
+  font-family: 'Yellowtail', cursive;
+  color: #fff;
+
+  @media screen and (max-width:550px){
+    display: none;
+  }
+}
+
+.gratis-button{
+  display: none;
+
+  @media screen and (max-width:550px){
+      display: inline-block;
+      width: 50%;
+      text-align: center;
+      line-height: 32px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 700;
+      background-color: var(--buttonColor);
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  @media screen and (max-width:550px){
+    margin: 0;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;600&display=swap');
+
+.registration-container {
+  width: 100%;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Catamaran", sans-serif;
+  position: relative;
+}
+
+.form-container{
+  position: relative;
+  top:-100px;
+  z-index: 1000;
+}
+
+.form {
+  border: 1px solid rgb(233, 230, 230);
+  width: 30rem;
+  padding: 3rem;
+  background-color: rgb(250,250,250); 
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  padding: 0.7rem;
+}
+
+.form form button {
+  background-color: var(--buttonColor);
+  color: #fff;
+  padding: 0.7rem;
+  border: none;
+}
+
+.form p{
+  text-align: center;
+  margin-bottom: 1.2rem;
+  color:rgb(165, 165, 165);
+  font-size: 10px;
+}
+
+.form h4{
+  margin:2rem 0 1.5rem 0;
+  font-size: 24px;
+  font-weight: bold;
+  
+  @media screen and (max-width:550px){
+    font-size: 20px;
+  }
+}
+
+.form input, .form button{
+  margin-bottom: 1.2rem;
+}
+
+.social-signup{
+  border-top: 1px solid rgb(202, 200, 200);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+.social-signup h3{
+  text-align: center;
+}
+
+.social{
+  width:100%;
+  display: flex;
+  align-items: center;
+
+  @media screen and  (max-width:550px){
+      display: flex;
+      flex-direction: column;
+  } 
+}
+
+.social-signup button{
+    border:1px solid rgb(214, 214, 214);
+    padding:0.6rem 1.3rem;
+    margin:0.5rem;
+    display: flex;
+    align-items: center;
+    width: 30%;
+
+    @media screen and (max-width:550px){
+      width: 50%;
+    }
+}
+
+.social-signup img {
+  width: 14px !important;
+}
+
+.social-signup img, .social-signup i{
+    margin-right: 0.3rem;
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.login-redirection{
+    background-color: #f0f2f4;
+    width:30rem;
+    height:2rem;
+    text-align: center;
+}
+
+.login-redirection p{
+    font-size: 0.8rem;
+    color:rgb(177, 172, 172)
+}
+
+.login-redirection a{
+    text-decoration: none;
+    color:darkgray;
+    font-weight: bold;
+}
+
+@media (max-width:540px){
+  .form, .login-redirection{
+    width:372px
+  }
+} 
